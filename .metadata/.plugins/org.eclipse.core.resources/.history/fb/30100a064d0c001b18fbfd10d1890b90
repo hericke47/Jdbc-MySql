@@ -29,9 +29,7 @@ public class Program {
 			e.printStackTrace();
 		}
 		finally {
-			DB.closeResultSet(rs);
-			DB.closeStatement(st);
-			DB.closeConnection();
+			
 		}
 		
 	}
