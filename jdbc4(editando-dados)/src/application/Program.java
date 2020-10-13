@@ -30,6 +30,8 @@ public class Program {
 			System.out.println("Done! Rows affected: " + rowsAffected);
 			
 		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
 			DB.closeStatement(st);
 			DB.closeConnection();
 		}
